@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,500;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+.product {
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  border-radius: 20px;
+  display: block;
+}
+.image {
+  width: 50%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100%;
+  background-image: url("./images/image-product-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+.information {
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: left;
+  padding: 40px;
+}
+
+.information h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  width: 80%;
+  margin-top: 20px;
+  font-size: 2.5em;
+}
+#perfume {
+  letter-spacing: 5px;
+  font-size: 16px;
+  font-family: "Fraunces", serif;
+  color: hsl(228, 12%, 48%);
+}
+
+.information p {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  width: 80%;
+  text-transform: capitalize;
+  white-space: wrap;
+  margin-top: 24px;
+}
+.information h2 {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.information h2 span {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-weight: 600;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.information button {
+  width: 100%;
+  height: 12%;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid hsl(158, 36%, 37%);
+  font-size: 16px;
+  padding: 15px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1950px) and (min-width: 1700px) {
+  .product {
+    width: 55%;
+    height: 55%;
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1300px) {
+  .product {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 900px) {
+  .product {
+    width: 75%;
+    height: 75%;
+  }
+  .information h1 {
+    width: 100%;
+    font-size: 1.8em;
+    margin-top: 10px;
+  }
+
+  .information button {
+    height: 15%;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 800px) {
+  .product {
+    width: 82%;
+    height: 82%;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+  .product {
+    width: 85%;
+    height: 85%;
+  }
+  .information {
+    padding: 20px;
+  }
+  .information h1 {
+    width: 100%;
+    font-size: 1.9em;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 350px) {
+  .product {
+    width: 90%;
+    height: 90%;
+  }
+
+  .image {
+    background-image: url("./images/image-product-desktop.jpg");
+    width: 100%;
+    height: 40%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .information {
+    width: 100%;
+    height: 60%;
+    padding: 20px;
+  }
+
+  .information h1 {
+    width: 100%;
+    font-size: 1.8em;
+    margin-top: 10px;
+  }
+  .information p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .information button {
+    height: 14%;
+    width: 100%;
+  }
+  .information h2 {
+    margin-top: 10px;
+  }
+}
