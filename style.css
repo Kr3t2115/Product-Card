@@ -97,3 +97,24 @@
     font-size: 1.5rem;
   }
 }
+@media only screen and (max-width: 400px) and (min-width: 350px) {
+  .product {
+    width: 80%;
+    height: 90%;
+  }
+  .image {
+    width: 100%;
+    height: 40%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    background-image: url(./images/image-product-mobile.jpg);
+  }
+  .information {
+    width: 100%;
+    height: 60%;
+    padding: 20px;
+  }
+  .information h1 {
+    font-size: 1.5rem;
+  }
+}
